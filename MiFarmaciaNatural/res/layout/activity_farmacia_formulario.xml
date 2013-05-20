@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FarmaciaFormulario" >
+ 
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="10dp" >
+ 
+       <TextView
+           android:id="@+id/label_nombre"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/label_nombre_planta"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+       <EditText
+           android:id="@+id/nombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/label_nombre"
+           android:ems="10" />
+    
+       <TextView
+           android:id="@+id/label_caracteristicas"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/label_caracteristicas"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:layout_below="@+id/nombre"
+           android:layout_marginTop="20dp" />
+        
+       <EditText
+           android:id="@+id/caracteristicas"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/label_caracteristicas"
+           android:ems="10"
+           android:inputType="textMultiLine">
+       </EditText>
+        
+       <TextView
+           android:id="@+id/label_propiedades"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/label_propiedades"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:layout_below="@+id/caracteristicas"
+           android:layout_marginTop="20dp" />
+        
+       <EditText
+           android:id="@+id/propiedades"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/label_propiedades"
+           android:ems="10">
+       </EditText>
+        
+	<LinearLayout
+     		android:id="@+id/botonera"
+     		android:layout_width="match_parent"
+     		android:layout_height="wrap_content"
+     		android:layout_below="@id/propiedades"
+     		android:gravity="center"
+     		android:layout_marginTop="20dp"
+     		android:orientation="horizontal" >
+ 
+	     <Button
+	         android:id="@+id/boton_cancelar"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/boton_cancelar" />
+	 
+	     <Button
+	         android:id="@+id/boton_guardar"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="@string/boton_guardar" />
+ 
+ 	</LinearLayout>
+       
+  
+   </RelativeLayout>
+   
+     
+</ScrollView>
+
+
+
+
+

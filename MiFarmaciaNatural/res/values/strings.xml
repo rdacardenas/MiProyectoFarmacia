@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiFarmaciaNatural</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Farmacia Natural</string>
+    <string name="lista_vacia">Sin Datos</string>
+
+    <string name="label_nombre_planta">Nombre:</string>
+	<string name="label_caracteristicas">Caracteristicas:</string>
+	<string name="label_propiedades">Propiedades:</string>	
+	
+	<string name="menu_crear">Nuevo</string>
+	
+	<string name="boton_guardar">Guardar</string>
+    <string name="boton_cancelar">Cancelar</string>
+    
+    <string name="farmacia_crear_titulo">Nueva Planta Medicinal</string>
+	<string name="farmacia_crear_confirmacion">Planta agregada y creada</string>
+	
+	<string name="menu_guardar">Guardar</string>
+	<string name="menu_cancelar">Cancelar</string>
+	<string name="menu_eliminar">Eliminar</string>
+	
+	<string name="farmacia_eliminar_titulo">Eliminar Planta</string>
+	<string name="farmacia_eliminar_mensaje">¿Seguro que desea eliminar?</string>
+	<string name="farmacia_eliminar_confirmacion">Planta eliminada</string>
+    
+	<string name="farmacia_editar_titulo">Editar Planta</string>
+	<string name="farmacia_editar_confirmacion">Planta modificada</string>
+	
+	<string name="menu_editar">Editar</string>
+	<string name="menu_visualizar">Ver</string>
+	
+	<string name="title_activity_farmacia_formulario">Farmacia Formulario</string>
+</resources>
