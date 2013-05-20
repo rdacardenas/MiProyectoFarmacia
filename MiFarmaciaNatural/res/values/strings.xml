@@ -7,8 +7,8 @@
     <string name="lista_vacia">Sin Datos</string>
 
     <string name="label_nombre_planta">Nombre:</string>
-	<string name="label_caracteristicas">Caracteristicas:</string>
-	<string name="label_propiedades">Propiedades:</string>	
+	<string name="label_caracteristicas">Caracteristicas Genéricas:</string>
+	<string name="label_propiedades">Propiedades Medicinales:</string>	
 	
 	<string name="menu_crear">Nuevo</string>
 	
