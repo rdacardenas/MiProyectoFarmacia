@@ -27,7 +27,8 @@ public class FarmaciaFormulario extends Activity {
    private Button boton_guardar;
    private Button boton_cancelar;
    
- 
+   private Menu menu;
+
    @Override
    protected void onCreate(Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
@@ -150,7 +151,7 @@ private void establecerModo(int m)
    
    @Override
    public boolean onCreateOptionsMenu(Menu menu) {
- 
+	   this.menu = menu;
       menu.clear();
         
       if (modo == MainActivity.Cte_Ver)
@@ -181,6 +182,11 @@ private void establecerModo(int m)
             
          case R.id.menu_editar:
              establecerModo(MainActivity.Cte_Edit);
+			if (menu != null) {
+				menu.clear();
+				getMenuInflater().inflate(R.menu.farmacia_formulario_editar,
+						menu);
+			}
              return true;
       }
        
