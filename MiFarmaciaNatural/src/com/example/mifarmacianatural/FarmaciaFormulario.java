@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,6 +35,8 @@ public class FarmaciaFormulario extends Activity {
       super.onCreate(savedInstanceState);
       setContentView(R.layout.activity_farmacia_formulario);
  
+      Log.d("FarmaciaFormulario", "onCreated");
+      
       Intent intent = getIntent();
       Bundle extra = intent.getExtras();
  
@@ -76,6 +79,15 @@ public class FarmaciaFormulario extends Activity {
       });
  
    }
+   
+   @Override
+	protected void onDestroy() {
+		super.onDestroy();
+		
+		dbAdapter.cerrar();
+		
+		Log.d("FarmaciaFormulario", "onDestroyed");
+	}
    
 private void establecerModo(int m)
    {
